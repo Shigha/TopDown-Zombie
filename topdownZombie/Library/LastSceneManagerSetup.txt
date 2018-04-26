@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/camera01.unity
+- path: Assets/weapon01.unity
   isLoaded: 1
   isActive: 1
