@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/charactermovement01.unity
+- path: Assets/enemy01.unity
   isLoaded: 1
   isActive: 1

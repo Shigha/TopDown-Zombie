@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topdownZombie", "topdownZombie.csproj", "{D8C225D3-45F9-37D6-4F13-DEBDCD9FFC9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topdownZombie.Editor", "topdownZombie.Editor.csproj", "{17BBC01C-D875-913E-F6DE-3F5E3DCFC264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{D8C225D3-45F9-37D6-4F13-DEBDCD9FFC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C225D3-45F9-37D6-4F13-DEBDCD9FFC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C225D3-45F9-37D6-4F13-DEBDCD9FFC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17BBC01C-D875-913E-F6DE-3F5E3DCFC264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17BBC01C-D875-913E-F6DE-3F5E3DCFC264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17BBC01C-D875-913E-F6DE-3F5E3DCFC264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17BBC01C-D875-913E-F6DE-3F5E3DCFC264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

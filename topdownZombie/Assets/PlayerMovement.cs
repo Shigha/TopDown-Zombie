@@ -55,6 +55,14 @@ public class PlayerMovement : MonoBehaviour {
     {
         bool walking = h != 0f || v != 0f;
         anim.SetBool("IsWalking", walking);
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            float runing = 0.7f;
+             anim.SetFloat("Speed", runing);
+        }
+        
     }
+    
     
 }
