@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+    public float walkSpeed = 3;
+    public float runSpeed = 6;
     public float speed = 6f;
-
     Vector3 movement;
     Animator anim;
     Rigidbody playerRigedbody;
@@ -22,6 +24,15 @@ public class PlayerMovement : MonoBehaviour {
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = walkSpeed;           
+        }
 
         Move(h, v);
         Turning();
@@ -46,7 +57,10 @@ public class PlayerMovement : MonoBehaviour {
             Vector3 playerToMouse = floorHit.point - transform.position;
             playerToMouse.y = 0f;
 
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+ 
+            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);  
+
+            //playerRotation at the newRotation
             playerRigedbody.MoveRotation(newRotation);
         }
     }
@@ -56,12 +70,8 @@ public class PlayerMovement : MonoBehaviour {
         bool walking = h != 0f || v != 0f;
         anim.SetBool("IsWalking", walking);
 
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            float runing = 0.7f;
-             anim.SetFloat("Speed", runing);
-        }
-        
+        anim.SetFloat("Speed", speed);
+
     }
     
     

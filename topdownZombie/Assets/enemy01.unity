@@ -506,6 +506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4706c9ed5cad73048b08211cb07b0d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 3
+  runSpeed: 6
   speed: 7.02
 --- !u!136 &747626933
 CapsuleCollider:
@@ -533,7 +535,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 68
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &1170298777
 Prefab:
